@@ -6,6 +6,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -17,7 +20,9 @@
     width: 100% ;
     padding: 30px 0;
     font-family: 'Playfair Display', serif;
+    
 }
+
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -30,8 +35,10 @@
     font-weight: 600;
 }
 .navbar .logo a span{
-    color:rgb(255, 88, 96)
+    color:rgb(255, 88, 96);
+    transition: all 0.3s ease;
 }
+
 .navbar .menu{
     list-style: none;
     display: flex;
@@ -77,6 +84,14 @@ li.active::before{
     }
 }
 
+/* menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
 /*home section styling */
 .home{
     display: flex;
@@ -100,6 +115,12 @@ li.active::before{
 .home .home-content .text-3{
     font-size: 30px;
     margin: 5px 0;
+    inline-size: 450px;
+    height:40px;
+    white-space: pre;
+}
+.home .home-content .text-3 .typing{
+    color: yellow;
 }
 .home .home-content a{
     display: inline-block;
@@ -122,6 +143,70 @@ li.active::before{
     margin-top: 40px;
     margin-left: 128px;
 }
+
+/* responsive media query start */
+/* @media screen and (max-width: 700px){
+    
+    .navbar ul{
+        position: absolute;
+        width: 100%;
+        top: 75px;
+        right: 0;
+        background:rgba(21, 192, 98, 0.349);
+        padding-top: 80px;
+        z-index: 2;
+    }
+    .navbar ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .navbar ul li a{
+        color: white;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .menu-btn{
+        display: flex;
+    }
+}  */
+
+
+
+/* 
+@media screen and (max-width: 940px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: rgb(255, 88, 96);
+        padding-top: 80px;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;        
+       
+    }
+    .active{
+        display: none;
+    }
+}      */
+
+   
+/* input[type="checkbox"]{
+    display: none;
+ }   */
 
 /*My hobbies section styling */
 section{
@@ -206,6 +291,7 @@ section{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
+    margin-top: 20px;
     margin-bottom: 60px; 
     padding-bottom: 20px;
     font-family: 'Playfair Display', serif;
@@ -253,3 +339,33 @@ section{
 .skills .skills-content .css::before{
     width: 60%;
 }
+
+footer{
+ background: white;
+ padding: 2px 3px;
+ color: tomato;
+}
+footer span{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+/* @media screen and (max-width:720px){
+    ul {
+        display: none;
+    }
+     .menu-btn{
+        position: absolute;
+        right: 10px;
+        top: 18px;
+    }
+    .logo{
+        padding-left: 30px;
+        font-size: 30px; 
+        
+    
+}
+} */
