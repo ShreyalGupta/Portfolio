@@ -5,3 +5,12 @@ items.forEach((item) => {
     item.classList.add("active");
   });
 });
+
+//typing animation script
+var typed = new Typed(".typing", {
+    strings: [ "second year IT student at NSUT.", "member of Mirage Western Dance Crew.", "Tech Enthusiast."],
+    typeSpeed: 50,
+    backSpeed: 60,
+    loop: true
+});
+
